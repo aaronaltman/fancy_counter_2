@@ -1,6 +1,5 @@
 import { Minus, Plus } from "lucide-react";
 import React from "react";
-import Toast from "./toast";
 
 export default function CounterButtons({ count, setCount }: any) {
   return (
@@ -25,7 +24,6 @@ export default function CounterButtons({ count, setCount }: any) {
           <Plus size={40} />
         </button>
       </div>
-      <Toast />
     </>
   );
 }
