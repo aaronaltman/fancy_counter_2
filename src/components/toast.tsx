@@ -16,7 +16,7 @@ export default function Toast({ open, setOpen }) {
   return open ? (
     <div className="toast">
       <div className="alert alert-info bg-success">
-        <p className="text-base-500">Counter Reset Success!</p>
+        <p className="text-base-500">Counter Reset</p>
       </div>
     </div>
   ) : null;
