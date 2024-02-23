@@ -3,12 +3,13 @@
 import { RefreshCw } from "lucide-react";
 import React from "react";
 
-export default function Reset() {
+export default function Reset({ setCount }: any) {
   return (
     <>
       <button
         onClick={(e) => {
-          console.log(e);
+          e.preventDefault();
+          setCount(0);
         }}
         className="flex justify-center items-center"
       >

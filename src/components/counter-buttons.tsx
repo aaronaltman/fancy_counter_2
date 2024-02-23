@@ -1,17 +1,31 @@
 import { Minus, Plus } from "lucide-react";
 import React from "react";
+import Toast from "./toast";
 
-export default function CounterButtons() {
+export default function CounterButtons({ count, setCount }: any) {
   return (
-    <div className="flex justify-center items-center gap-1">
-      <div className="flex justify-center items-center gap-1 bg-accent p-4 rounded-lg">
-        <button className="flex items-center justify-center btn btn-primary p-10">
-          <Minus size={40} />
+    <>
+      <div className="flex justify-center">
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            setCount(count - 1);
+          }}
+          className="btn"
+        >
+          <Minus size={40} className="" />
         </button>
-        <button className="btn btn-primary p-10">
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            setCount(count + 1);
+          }}
+          className="btn "
+        >
           <Plus size={40} />
         </button>
       </div>
-    </div>
+      <Toast />
+    </>
   );
 }
