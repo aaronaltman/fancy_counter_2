@@ -1,5 +1,18 @@
-import Image from "next/image";
+import Reset from "@/components/reset";
+import Title from "@/components/title";
 
 export default function Home() {
-  return <h1>Fancy Counter</h1>;
+  return (
+    <main>
+      <div>
+        <Title />
+        <p>Counter: 0</p>
+        <Reset />
+        <div>
+          <button className="btn">+</button>
+          <button className="btn">-</button>
+        </div>
+      </div>
+    </main>
+  );
 }
