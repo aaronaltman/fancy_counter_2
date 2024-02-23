@@ -15,8 +15,8 @@ export default function Toast({ open, setOpen }) {
   // Correct conditional rendering syntax
   return open ? (
     <div className="toast">
-      <div className="alert alert-info bg-accent">
-        <span className="text-black">Counter Reset Success!</span>
+      <div className="alert alert-info bg-success">
+        <p className="text-base-500">Counter Reset Success!</p>
       </div>
     </div>
   ) : null;

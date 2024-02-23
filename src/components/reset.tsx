@@ -14,7 +14,7 @@ export default function Reset({ setCount, setOpen, open }: any) {
         }}
         className="flex justify-center items-center"
       >
-        <RefreshCw size={40} />
+        <RefreshCw size={40} className="" />
       </button>
     </>
   );

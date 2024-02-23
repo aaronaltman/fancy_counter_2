@@ -10,18 +10,18 @@ export default function CounterButtons({ count, setCount }: any) {
             e.preventDefault();
             setCount(count - 1);
           }}
-          className="btn px-12 py-12"
+          className="btn btn-outline btn-lg shadow-lg"
         >
-          <Minus size={40} className="-mt-4" />
+          <Minus size={40} className="" />
         </button>
         <button
           onClick={(e) => {
             e.preventDefault();
             setCount(count + 1);
           }}
-          className="btn px-12 py-12 "
+          className="btn btn-outline btn-lg shadow-lg "
         >
-          <Plus size={40} className="-mt-4" />
+          <Plus size={40} className="" />
         </button>
       </div>
     </>
