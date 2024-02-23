@@ -1,6 +1,6 @@
 "use client";
 
-import { Rotate3D } from "lucide-react";
+import { RefreshCw } from "lucide-react";
 import React from "react";
 
 export default function Reset() {
@@ -10,8 +10,9 @@ export default function Reset() {
         onClick={(e) => {
           console.log(e);
         }}
+        className="flex justify-center items-center"
       >
-        <Rotate3D />
+        <RefreshCw size={40} />
       </button>
     </>
   );
