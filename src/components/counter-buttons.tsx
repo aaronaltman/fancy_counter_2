@@ -4,13 +4,13 @@ import React from "react";
 export default function CounterButtons({ count, setCount }: any) {
   return (
     <>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center gap-2">
         <button
           onClick={(e) => {
             e.preventDefault();
             setCount(count - 1);
           }}
-          className="btn px-10 py-10"
+          className="btn px-12 py-12"
         >
           <Minus size={40} className="-mt-4" />
         </button>
@@ -19,7 +19,7 @@ export default function CounterButtons({ count, setCount }: any) {
             e.preventDefault();
             setCount(count + 1);
           }}
-          className="btn px-10 py-10 "
+          className="btn px-12 py-12 "
         >
           <Plus size={40} className="-mt-4" />
         </button>
